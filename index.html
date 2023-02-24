@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulación Examen Esperanza</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-between">
+          <p class="text-dark fs-2 pt-3">MY ART</p>
+          <p class="text-dark fs-2 pt-3">About</p>
+        </div>
+        <!-- IMÁGENES -->
+        <!-- PRIMERA FILA -->
+          <div class="d-flex col-xs-12 col-sm-12 col-md-4 p-1">
+              <img src="img/big/streetart.png">
+       
+          </div>
+          <div class="d-flex col-xs-12 col-sm-12 col-md-4 p-1">
+              <img src="img/big/streetart2.png">
+          </div>
+          <div class="d-flex col-xs-12 col-sm-12 col-md-4 p-1">
+              <img src="img/big/streetart5.png">
+          </div>
+          <!-- SEGUNDA FILA -->
+          <div class="d-flex col-xs-12 col-sm-12 col-md-6 p-1">
+              <img src="img/big/streetart3.png">
+          </div>
+           <div class="d-flex col-xs-12 col-sm-12 col-md-6 p-1">
+              <img src="img/big/streetart4.png">
+          </div>
+      </div>
+      <!-- SEGUNDA IMAGEN, TEXTO Y FORMULARIO -->
+      <div class="container bg-light">
+      <div class="row">
+        <p class="text-center fs-1 p-4 fw-bold">About</p>
+      </div>
+        <div class="d-flex justify-content-center col-xs-12 col-sm-12 col-md-12">
+          <img src="img/big/boy.png">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <p class="text-center mt-5">Solo yo, yo y yo, explorando el universo de lo desconocido. tengo un corazón de amor y un interés de lorem ipsum and mauris neque quam blog. Quiero compartir mi mundo contigo. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          <p class="text-center text-danger fw-bold">¡No dudes en contactarme!</p>
+        </div>
+          <!-- DATOS FORMULARIO -->
+          <div class="container">
+            <div class="formulario d-flex justify-content-center">
+              <form action="datos.php" method="post" class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group w-100 text-center fw-bold">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" required>
+                </div>
+                <div class=" form-group w-100 text-center fw-bold">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group w-100 text-center fw-bold">
+                  <label for="sms" class="form-label">Mensaje</label>
+                  <input type="text" class="form-control" id="sms" required>
+                </div>
+                <button type="submit" class="btn btn-dark w-100 mt-3 mb-3">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
